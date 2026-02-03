@@ -1,5 +1,6 @@
 *.ipynb
 #!examples/*.ipynb
+!examples/umlip_neb_percolation_analysis.ipynb
 *grd
 
 table.md
