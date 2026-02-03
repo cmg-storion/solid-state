@@ -196,7 +196,7 @@ def energy_above_hull(entry, entries, return_phase_diagram=True):
 
     phase_diagram = PhaseDiagram([entry] + entries)
     result = {
-            "e_hull": phase_diagram.get_e_above_hull(entries[0])
+            "e_hull": phase_diagram.get_e_above_hull(entry)
             }
     if return_phase_diagram:
         result.update({"phase_diagram": phase_diagram})
