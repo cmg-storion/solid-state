@@ -1,6 +1,7 @@
 *.ipynb
 #!examples/*.ipynb
 !examples/umlip_neb_percolation_analysis.ipynb
+!examples/sandwich_stability.ipynb
 *grd
 
 table.md
