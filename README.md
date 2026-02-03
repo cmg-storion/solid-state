@@ -17,7 +17,7 @@ pip install solid_state
 or 
 
 ```
-git clone https://github.com/dembart/solid-state
+git clone https://github.com/cmg-storion/solid-state
 cd solid-state
 pip install .
 ```
