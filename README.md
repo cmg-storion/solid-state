@@ -20,4 +20,6 @@ pip install .
 
 - [UMLIP-NEB percolation analysis](examples/umlip_neb_percolation_analysis.ipynb)
 - [Li|Anode coating|Electrolyte|Cathode sandwich stability](examples/sandwich_stability.ipynb) (using only the Materials Project's entries)
+- [High-throughput pipeline for screening the MP database](examples/workflow_MP.ipynb)
+
 
