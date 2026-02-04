@@ -172,7 +172,7 @@ def chemical_mixing_energy(
 
     interface_table = interface.get_dataframe()
 
-    col = "E$_{\\textrm{rxn}}$ (eV/atom)"
+    col = "E$_{\textrm{rxn}}$ (eV/atom)"
     index = interface_table[col].idxmin()
     emin = interface_table[col].iloc[index]
     reaction = interface_table["Reaction"].iloc[index]
