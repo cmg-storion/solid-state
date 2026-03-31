@@ -4,14 +4,14 @@ from pymatgen.entries.computed_entries import ComputedEntry
 
 
 U_values = {
-'Co': 3.32,
-'Cr': 3.7,
-'Fe': 5.3,
-'Mn': 3.9,
-'Mo': 4.38,
-'Ni': 6.2,
-'V': 3.25,
-'W': 6.2
+    "Co": 3.32,
+    "Cr": 3.7,
+    "Fe": 5.3,
+    "Mn": 3.9,
+    "Mo": 4.38,
+    "Ni": 6.2,
+    "V": 3.25,
+    "W": 6.2,
 }
 
 
@@ -93,7 +93,11 @@ def set_MP2020_settings(entry, run_type=None):
 
 
 
-def prepare_computed_entries(compositions, energies, material_ids=None):
+def prepare_computed_entries(
+    compositions,
+    energies,
+    material_ids=None,
+):
     
     """
     Prepare CoputedEntry objects from a list of compositions and energies
@@ -120,7 +124,9 @@ def prepare_computed_entries(compositions, energies, material_ids=None):
     if material_ids is None:
         material_ids = [f'ID-{i}' for i in range(len(compositions))]
 
-    entries = [ComputedEntry(comp, energy = e, entry_id = mp_id)\
-                     for comp, e, mp_id in zip(compositions, energies, material_ids)]
+    entries = [
+        ComputedEntry(comp, energy=e, entry_id=mp_id)
+        for comp, e, mp_id in zip(compositions, energies, material_ids)
+    ]
     
     return entries

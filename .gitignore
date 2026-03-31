@@ -4,7 +4,7 @@
 !examples/sandwich_stability.ipynb
 !examples/workflow_MP.ipynb
 *grd
-
+data_Na
 table.md
 
 solid_state/__pycache__/*
